@@ -1,0 +1,54 @@
+[
+  {
+    "name": "freeCodeCamp",
+    "metric_count": 379989,
+    "metric_rank": 1
+  },
+  {
+    "name": "free-programming-books",
+    "metric_count": 305467,
+    "metric_rank": 2
+  },
+  {
+    "name": "awesome",
+    "metric_count": 282662,
+    "metric_rank": 3
+  },
+  {
+    "name": "coding-interview-university",
+    "metric_count": 274026,
+    "metric_rank": 4
+  },
+  {
+    "name": "public-apis",
+    "metric_count": 272967,
+    "metric_rank": 5
+  },
+  {
+    "name": "996.ICU",
+    "metric_count": 268310,
+    "metric_rank": 6
+  },
+  {
+    "name": "developer-roadmap",
+    "metric_count": 261253,
+    "metric_rank": 7
+  },
+  {
+    "name": "system-design-primer",
+    "metric_count": 238191,
+    "metric_rank": 8
+  },
+  {
+    "name": "build-your-own-x",
+    "metric_count": 233940,
+    "metric_rank": 9
+  },
+  {
+    "name": "react",
+    "metric_count": 216542,
+    "metric_rank": 10
+  }
+]
+
+

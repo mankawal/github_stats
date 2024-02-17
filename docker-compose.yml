@@ -1,0 +1,22 @@
+version: "3.6"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    networks:
+      - github_stats_nw
+    ports:
+      - 3000:3000
+      - 3001:3001
+    command: sh -c 'npm start'
+      # command: sh -c '(node --watch /app/src/server/index.js &) && sleep 3 && npm start'
+networks:
+  github_stats_nw:
+    external: true
+    name: github_stats_nw

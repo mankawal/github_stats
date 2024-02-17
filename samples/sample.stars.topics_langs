@@ -1,0 +1,904 @@
+[
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "JavaScript",
+    "lang_metric_count": "7164234",
+    "lang_pct": "49.7676",
+    "lang_rank": 1
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "TypeScript",
+    "lang_metric_count": "3852244",
+    "lang_pct": "26.7603",
+    "lang_rank": 2
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Rust",
+    "lang_metric_count": "250021",
+    "lang_pct": "1.7368",
+    "lang_rank": 3
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Vue",
+    "lang_metric_count": "221803",
+    "lang_pct": "1.5408",
+    "lang_rank": 4
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Python",
+    "lang_metric_count": "206964",
+    "lang_pct": "1.4377",
+    "lang_rank": 5
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "C++",
+    "lang_metric_count": "192604",
+    "lang_pct": "1.3380",
+    "lang_rank": 6
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "HTML",
+    "lang_metric_count": "166355",
+    "lang_pct": "1.1556",
+    "lang_rank": 7
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Go",
+    "lang_metric_count": "150510",
+    "lang_pct": "1.0455",
+    "lang_rank": 8
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Java",
+    "lang_metric_count": "146354",
+    "lang_pct": "1.0167",
+    "lang_rank": 9
+  },
+  {
+    "topic": "javascript",
+    "topic_metric_count": "14395380",
+    "topic_rank": 1,
+    "lang": "Dockerfile",
+    "lang_metric_count": "102812",
+    "lang_pct": "0.7142",
+    "lang_rank": 10
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "TypeScript",
+    "lang_metric_count": "2513328",
+    "lang_pct": "19.6397",
+    "lang_rank": 1
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "JavaScript",
+    "lang_metric_count": "1717148",
+    "lang_pct": "13.4182",
+    "lang_rank": 2
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "Python",
+    "lang_metric_count": "1500993",
+    "lang_pct": "11.7291",
+    "lang_rank": 3
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "Go",
+    "lang_metric_count": "1246871",
+    "lang_pct": "9.7433",
+    "lang_rank": 4
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "C++",
+    "lang_metric_count": "808633",
+    "lang_pct": "6.3188",
+    "lang_rank": 5
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "PHP",
+    "lang_metric_count": "613263",
+    "lang_pct": "4.7922",
+    "lang_rank": 6
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "Rust",
+    "lang_metric_count": "603647",
+    "lang_pct": "4.7170",
+    "lang_rank": 7
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "Java",
+    "lang_metric_count": "484348",
+    "lang_pct": "3.7848",
+    "lang_rank": 8
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "C#",
+    "lang_metric_count": "423615",
+    "lang_pct": "3.3102",
+    "lang_rank": 9
+  },
+  {
+    "topic": "hacktoberfest",
+    "topic_metric_count": "12797183",
+    "topic_rank": 2,
+    "lang": "Ruby",
+    "lang_metric_count": "305127",
+    "lang_pct": "2.3843",
+    "lang_rank": 10
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "Python",
+    "lang_metric_count": "7270347",
+    "lang_pct": "68.2519",
+    "lang_rank": 1
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "Jupyter Notebook",
+    "lang_metric_count": "592435",
+    "lang_pct": "5.5616",
+    "lang_rank": 2
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "C++",
+    "lang_metric_count": "507265",
+    "lang_pct": "4.7621",
+    "lang_rank": 3
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "JavaScript",
+    "lang_metric_count": "439968",
+    "lang_pct": "4.1303",
+    "lang_rank": 4
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "TypeScript",
+    "lang_metric_count": "191072",
+    "lang_pct": "1.7937",
+    "lang_rank": 5
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "Java",
+    "lang_metric_count": "126662",
+    "lang_pct": "1.1891",
+    "lang_rank": 6
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "HTML",
+    "lang_metric_count": "93308",
+    "lang_pct": "0.8759",
+    "lang_rank": 7
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "Shell",
+    "lang_metric_count": "89143",
+    "lang_pct": "0.8368",
+    "lang_rank": 8
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "Rust",
+    "lang_metric_count": "76275",
+    "lang_pct": "0.7160",
+    "lang_rank": 9
+  },
+  {
+    "topic": "python",
+    "topic_metric_count": "10652230",
+    "topic_rank": 3,
+    "lang": "CSS",
+    "lang_metric_count": "74139",
+    "lang_pct": "0.6960",
+    "lang_rank": 10
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "TypeScript",
+    "lang_metric_count": "3495273",
+    "lang_pct": "50.8424",
+    "lang_rank": 1
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "JavaScript",
+    "lang_metric_count": "2281124",
+    "lang_pct": "33.1813",
+    "lang_rank": 2
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "Python",
+    "lang_metric_count": "120988",
+    "lang_pct": "1.7599",
+    "lang_rank": 3
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "Java",
+    "lang_metric_count": "119571",
+    "lang_pct": "1.7393",
+    "lang_rank": 4
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "Go",
+    "lang_metric_count": "112830",
+    "lang_pct": "1.6412",
+    "lang_rank": 5
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "Zig",
+    "lang_metric_count": "66312",
+    "lang_pct": "0.9646",
+    "lang_rank": 6
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "CSS",
+    "lang_metric_count": "50543",
+    "lang_pct": "0.7352",
+    "lang_rank": 7
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "Rust",
+    "lang_metric_count": "42059",
+    "lang_pct": "0.6118",
+    "lang_rank": 8
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "MDX",
+    "lang_metric_count": "30792",
+    "lang_pct": "0.4479",
+    "lang_rank": 9
+  },
+  {
+    "topic": "react",
+    "topic_metric_count": "6874726",
+    "topic_rank": 4,
+    "lang": "HTML",
+    "lang_metric_count": "26293",
+    "lang_pct": "0.3825",
+    "lang_rank": 10
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "Python",
+    "lang_metric_count": "2113163",
+    "lang_pct": "42.8955",
+    "lang_rank": 1
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "Jupyter Notebook",
+    "lang_metric_count": "743061",
+    "lang_pct": "15.0836",
+    "lang_rank": 2
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "C++",
+    "lang_metric_count": "588689",
+    "lang_pct": "11.9499",
+    "lang_rank": 3
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "HTML",
+    "lang_metric_count": "153788",
+    "lang_pct": "3.1218",
+    "lang_rank": 4
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "JavaScript",
+    "lang_metric_count": "118720",
+    "lang_pct": "2.4099",
+    "lang_rank": 5
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "C",
+    "lang_metric_count": "107867",
+    "lang_pct": "2.1896",
+    "lang_rank": 6
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "Go",
+    "lang_metric_count": "101603",
+    "lang_pct": "2.0625",
+    "lang_rank": 7
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "C#",
+    "lang_metric_count": "56065",
+    "lang_pct": "1.1381",
+    "lang_rank": 8
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "TypeScript",
+    "lang_metric_count": "51268",
+    "lang_pct": "1.0407",
+    "lang_rank": 9
+  },
+  {
+    "topic": "machine-learning",
+    "topic_metric_count": "4926299",
+    "topic_rank": 5,
+    "lang": "Julia",
+    "lang_metric_count": "48016",
+    "lang_pct": "0.9747",
+    "lang_rank": 10
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Go",
+    "lang_metric_count": "4308888",
+    "lang_pct": "89.5132",
+    "lang_rank": 1
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "TypeScript",
+    "lang_metric_count": "74251",
+    "lang_pct": "1.5425",
+    "lang_rank": 2
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Makefile",
+    "lang_metric_count": "58246",
+    "lang_pct": "1.2100",
+    "lang_rank": 3
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Shell",
+    "lang_metric_count": "54792",
+    "lang_pct": "1.1383",
+    "lang_rank": 4
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "C++",
+    "lang_metric_count": "38711",
+    "lang_pct": "0.8042",
+    "lang_rank": 5
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Rust",
+    "lang_metric_count": "26956",
+    "lang_pct": "0.5600",
+    "lang_rank": 6
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Python",
+    "lang_metric_count": "25246",
+    "lang_pct": "0.5245",
+    "lang_rank": 7
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Java",
+    "lang_metric_count": "22429",
+    "lang_pct": "0.4659",
+    "lang_rank": 8
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "Handlebars",
+    "lang_metric_count": "18954",
+    "lang_pct": "0.3938",
+    "lang_rank": 9
+  },
+  {
+    "topic": "go",
+    "topic_metric_count": "4813689",
+    "topic_rank": 6,
+    "lang": "JavaScript",
+    "lang_metric_count": "17876",
+    "lang_pct": "0.3714",
+    "lang_rank": 10
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "TypeScript",
+    "lang_metric_count": "3516174",
+    "lang_pct": "73.7302",
+    "lang_rank": 1
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "JavaScript",
+    "lang_metric_count": "519427",
+    "lang_pct": "10.8918",
+    "lang_rank": 2
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "Rust",
+    "lang_metric_count": "198550",
+    "lang_pct": "4.1634",
+    "lang_rank": 3
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "Go",
+    "lang_metric_count": "78268",
+    "lang_pct": "1.6412",
+    "lang_rank": 4
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "Vue",
+    "lang_metric_count": "71210",
+    "lang_pct": "1.4932",
+    "lang_rank": 5
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "Zig",
+    "lang_metric_count": "66312",
+    "lang_pct": "1.3905",
+    "lang_rank": 6
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "C++",
+    "lang_metric_count": "33223",
+    "lang_pct": "0.6966",
+    "lang_rank": 7
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "Python",
+    "lang_metric_count": "29333",
+    "lang_pct": "0.6151",
+    "lang_rank": 8
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "HTML",
+    "lang_metric_count": "27673",
+    "lang_pct": "0.5803",
+    "lang_rank": 9
+  },
+  {
+    "topic": "typescript",
+    "topic_metric_count": "4768974",
+    "topic_rank": 7,
+    "lang": "WebAssembly",
+    "lang_metric_count": "16145",
+    "lang_pct": "0.3385",
+    "lang_rank": 10
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "JavaScript",
+    "lang_metric_count": "2249333",
+    "lang_pct": "47.7254",
+    "lang_rank": 1
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "TypeScript",
+    "lang_metric_count": "1525619",
+    "lang_pct": "32.3700",
+    "lang_rank": 2
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "C++",
+    "lang_metric_count": "161208",
+    "lang_pct": "3.4204",
+    "lang_rank": 3
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Go",
+    "lang_metric_count": "103288",
+    "lang_pct": "2.1915",
+    "lang_rank": 4
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Dockerfile",
+    "lang_metric_count": "102357",
+    "lang_pct": "2.1718",
+    "lang_rank": 5
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Shell",
+    "lang_metric_count": "97664",
+    "lang_pct": "2.0722",
+    "lang_rank": 6
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Zig",
+    "lang_metric_count": "66312",
+    "lang_pct": "1.4070",
+    "lang_rank": 7
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Python",
+    "lang_metric_count": "52763",
+    "lang_pct": "1.1195",
+    "lang_rank": 8
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "Vue",
+    "lang_metric_count": "52710",
+    "lang_pct": "1.1184",
+    "lang_rank": 9
+  },
+  {
+    "topic": "nodejs",
+    "topic_metric_count": "4713071",
+    "topic_rank": 8,
+    "lang": "HTML",
+    "lang_metric_count": "49733",
+    "lang_pct": "1.0552",
+    "lang_rank": 10
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "Python",
+    "lang_metric_count": "2326757",
+    "lang_pct": "50.4393",
+    "lang_rank": 1
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "Jupyter Notebook",
+    "lang_metric_count": "719308",
+    "lang_pct": "15.5931",
+    "lang_rank": 2
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "C++",
+    "lang_metric_count": "553106",
+    "lang_pct": "11.9902",
+    "lang_rank": 3
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "JavaScript",
+    "lang_metric_count": "124085",
+    "lang_pct": "2.6899",
+    "lang_rank": 4
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "TypeScript",
+    "lang_metric_count": "53831",
+    "lang_pct": "1.1669",
+    "lang_rank": 5
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "Lua",
+    "lang_metric_count": "41290",
+    "lang_pct": "0.8951",
+    "lang_rank": 6
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "HTML",
+    "lang_metric_count": "40940",
+    "lang_pct": "0.8875",
+    "lang_rank": 7
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "MDX",
+    "lang_metric_count": "38740",
+    "lang_pct": "0.8398",
+    "lang_rank": 8
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "TeX",
+    "lang_metric_count": "24870",
+    "lang_pct": "0.5391",
+    "lang_rank": 9
+  },
+  {
+    "topic": "deep-learning",
+    "topic_metric_count": "4612988",
+    "topic_rank": 9,
+    "lang": "Shell",
+    "lang_metric_count": "24479",
+    "lang_pct": "0.5307",
+    "lang_rank": 10
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "Java",
+    "lang_metric_count": "1709365",
+    "lang_pct": "37.4397",
+    "lang_rank": 1
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "Kotlin",
+    "lang_metric_count": "645124",
+    "lang_pct": "14.1300",
+    "lang_rank": 2
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "Dart",
+    "lang_metric_count": "333389",
+    "lang_pct": "7.3021",
+    "lang_rank": 3
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "TypeScript",
+    "lang_metric_count": "236593",
+    "lang_pct": "5.1820",
+    "lang_rank": 4
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "C++",
+    "lang_metric_count": "224755",
+    "lang_pct": "4.9227",
+    "lang_rank": 5
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "C",
+    "lang_metric_count": "212166",
+    "lang_pct": "4.6470",
+    "lang_rank": 6
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "JavaScript",
+    "lang_metric_count": "206160",
+    "lang_pct": "4.5155",
+    "lang_rank": 7
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "Python",
+    "lang_metric_count": "123173",
+    "lang_pct": "2.6978",
+    "lang_rank": 8
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "C#",
+    "lang_metric_count": "56931",
+    "lang_pct": "1.2469",
+    "lang_rank": 9
+  },
+  {
+    "topic": "android",
+    "topic_metric_count": "4565648",
+    "topic_rank": 10,
+    "lang": "Rust",
+    "lang_metric_count": "56563",
+    "lang_pct": "1.2389",
+    "lang_rank": 10
+  }
+]
+
+

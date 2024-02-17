@@ -1,0 +1,54 @@
+[
+  {
+    "topic": "javascript",
+    "metric_count": "14395380",
+    "metric_rank": 1
+  },
+  {
+    "topic": "hacktoberfest",
+    "metric_count": "12797183",
+    "metric_rank": 2
+  },
+  {
+    "topic": "python",
+    "metric_count": "10652230",
+    "metric_rank": 3
+  },
+  {
+    "topic": "react",
+    "metric_count": "6874726",
+    "metric_rank": 4
+  },
+  {
+    "topic": "machine-learning",
+    "metric_count": "4926299",
+    "metric_rank": 5
+  },
+  {
+    "topic": "go",
+    "metric_count": "4813689",
+    "metric_rank": 6
+  },
+  {
+    "topic": "typescript",
+    "metric_count": "4768974",
+    "metric_rank": 7
+  },
+  {
+    "topic": "nodejs",
+    "metric_count": "4713071",
+    "metric_rank": 8
+  },
+  {
+    "topic": "deep-learning",
+    "metric_count": "4612988",
+    "metric_rank": 9
+  },
+  {
+    "topic": "android",
+    "metric_count": "4565648",
+    "metric_rank": 10
+  }
+]
+
+
