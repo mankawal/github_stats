@@ -1,0 +1,11 @@
+curl -s http://localhost:3001/api/topics -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+curl -s http://localhost:3001/api/repos -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+curl -s http://localhost:3001/api/languages -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+curl -s http://localhost:3001/api/topic_repo_stats -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_repo_rank":10}'
+curl -s http://localhost:3001/api/topic_lang_stats -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_lang_rank": 10}'
+curl -s http://localhost:3001/api/topics -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+curl -s http://localhost:3001/api/repos -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+curl -s http://localhost:3001/api/languages -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+curl -s http://localhost:3001/api/topic_repo_stats -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_repo_rank":10}'
+curl -s http://localhost:3001/api/topic_lang_stats -X POST -H 'Content-Type: application/json' -d '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_lang_rank": 10}'
+

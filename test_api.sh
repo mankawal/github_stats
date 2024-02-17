@@ -21,7 +21,7 @@ function curl_call()
     data_args="-d $*"
   fi
 
-  >&2 echo "Running: curl -s http://localhost:$svc_port/api/$route $method $data_hdr $data_args"
+  >&2 echo "Running: curl -s http://localhost:$svc_port/api/$route $method -H 'Content-Type: application/json' -d '$*'"
   curl -s http://localhost:$svc_port/api/$route $method \
     -H 'Content-Type: application/json' \
     "$data_args" | jq
