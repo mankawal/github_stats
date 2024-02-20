@@ -1,13 +1,16 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import "./index.css"
-import TemperatureBarStack from "./TopicRepoStack"
 import reportWebVitals from "./reportWebVitals"
+
+import TopicRepoHeatMap from "./TopicRepoHeatMap"
+import TopicRanked from "./TopicRanked"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <TemperatureBarStack/>
+    <TopicRanked width={700} height={700}/>
+    <TopicRepoHeatMap width={300} height={700}/>
   </React.StrictMode>
 );
 

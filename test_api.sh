@@ -32,19 +32,21 @@ function curl_to_file()
 {
   outfile=$1
   shift 1
-  curl_call $* | tee $outfile
+  curl_call $* | tee $outfile.json
 }
 
-# Sort order: forks
-curl_to_file ./sample.forks.topics_ranked POST topics '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
-curl_to_file ./sample.forks.repos_ranked  POST repos '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
-curl_to_file ./sample.forks.langs_ranked  POST languages '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
-curl_to_file ./sample.forks.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_repo_rank":10}'
-curl_to_file ./sample.forks.topics_langs  POST topic_lang_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_lang_rank": 10}'
+curl_to_file ./sample.forks.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 20, "max_repo_rank":100}'
 
-# Sort order: stars
-curl_to_file ./sample.stars.topics_ranked POST topics '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
-curl_to_file ./sample.stars.repos_ranked  POST repos '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
-curl_to_file ./sample.stars.langs_ranked  POST languages '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
-curl_to_file ./sample.stars.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_repo_rank":10}'
-curl_to_file ./sample.stars.topics_langs  POST topic_lang_stats '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_lang_rank": 10}'
+# # Sort order: forks
+# curl_to_file ./sample.forks.topics_ranked POST topics '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+# curl_to_file ./sample.forks.repos_ranked  POST repos '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+# curl_to_file ./sample.forks.langs_ranked  POST languages '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
+# curl_to_file ./sample.forks.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_repo_rank":10}'
+# curl_to_file ./sample.forks.topics_langs  POST topic_lang_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_lang_rank": 10}'
+# 
+# # Sort order: stars
+# curl_to_file ./sample.stars.topics_ranked POST topics '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+# curl_to_file ./sample.stars.repos_ranked  POST repos '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+# curl_to_file ./sample.stars.langs_ranked  POST languages '{"month": 12, "year": 2023, "sort_by": "stars", "max_rank": 10}'
+# curl_to_file ./sample.stars.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_repo_rank":10}'
+# curl_to_file ./sample.stars.topics_langs  POST topic_lang_stats '{"month": 12, "year": 2023, "sort_by": "stars", "max_topic_rank": 10, "max_lang_rank": 10}'
