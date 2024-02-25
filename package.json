@@ -24,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
     "react-scripts": "^5.0.1",
+    "react-spring": "^9.6.1",
     "style-loader": "^3.3.4",
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"

@@ -1,41 +1,89 @@
-import { React, useState } from "react";
+import { useEffect, useState } from "react";
 import * as d3 from "d3";
 import "./index.css";
+import tooltip_styles from "./tooltip.module.css";
 
 import {COLORS, THRESHOLDS} from "./constants";
 import { forks_topics_repos_raw } from "./forks_topics_repos_data";
 
-const defaultMargin = { top: 40, right: 100, bottom: 100, left: 20};
-const data_raw = forks_topics_repos_raw;
+const margin = { top: 40, right: 100, bottom: 100, left: 20};
+const MAX_RANK = 15;
+
+/*
+  const Tooltip = (({hoveredCell, w, h}) => {
+  if (!hoveredCell) {
+    return;
+  }
+  return (
+    <div style={{w, h, position: "absolute",
+          top: 0, left: 0, pointerEvents: "none"}}>
+      <div clasName={tooltip_styles.tooltip}
+        style={{position: "absolute",
+          left: hoveredCell.xPos, top: hoveredCell.yPos }}>
+        <TooltipRow label={"topic"} value={hoveredCell.xLabel} />
+        <TooltipRow label={"repo"} value={hoveredCell.yLabel} />
+        <TooltipRow label={"forks"} value={hoveredCell.value} />
+      </div>
+    </div>
+  );
+});
+*/
 
 /* TODO:
  * - Add HeatMap Color Legend
  */
 export default function TopicRepoHeatMap({
-  width,
-  height,
-  event = false,
-  margin = defaultMargin
+  width, height, month_year, filterRepo, filterTopic
 }) {
-
+  const [data, setData] = useState(forks_topics_repos_raw);
+  const [month, year] = month_year.split(":");
+  console.log("month_year: ", month_year, month, year);
+  useEffect(() => {
+    const queryDb = () => {
+      const API = 'http://127.0.0.1:3001/api/topic_repo_stats';
+      fetch(API, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          'month': month,
+          'year': year,
+          'sort_by': 'forks',
+          'max_topic_rank': MAX_RANK,
+          'max_repo_rank': 50,
+        }),
+        mode: 'cors'
+      })
+        .then((resp) => {
+          console.log("Db response: ", resp);
+          return resp.json();
+        })
+        .then((res_data) => {
+          console.log("topic-repo query res: ", JSON.stringify(res_data));
+          setData(res_data);
+        });
+    };
+    if ( ((month >= 1) && (month <= 12)) ||
+          ((year >= 2023) && (year <= 2024)) ) {
+      queryDb();
+    }
+  }, [month, year]);
   /* Move to parent */
   const [hoveredCell, setHoveredCell] = useState(null);
 
   if (width < 10) return null;
-
   const max_x = width - margin.right - margin.left;
   const max_y = height - margin.top - margin.bottom;
 
   // console.log("type of forks_topics_repos_raw: ", typeof(forks_topics_repos_raw));
 
   let topics = new Map(); 
-  const repos = new Map(data_raw.map((e) => [e.repo_name, {
+  const repos = new Map(data.map((e) => [e.repo_name, {
     metric_count: 0, lang: "undef", rank: 0, pct: 0,
     overall_rank: Number(e.overall_repo_rank),
   }]));
   let max_repo_pct = 0;
   let min_repo_pct = 100;
-  for (const stat of data_raw) {
+  for (const stat of data) {
     if (!topics.has(stat.topic)) {
       topics.set(stat.topic, {
         topic: stat.topic,
@@ -58,7 +106,6 @@ export default function TopicRepoHeatMap({
       min_repo_pct = stat.pct_repo_to_topic;
     }
   }
-  console.log("repo pct min: ", min_repo_pct, ", max: ", max_repo_pct);
   const topics_keys = Array.from(topics, ([k, v]) => k);
   const repos_keys_by_rank = [...repos].sort((l, r) =>
     ((l[1].overall_rank > r[1].overall_rank)
@@ -83,11 +130,31 @@ export default function TopicRepoHeatMap({
   let labels_x = [];
   let labels_y = [];
   let first_pass_repos_done = false;
+  let filtered = null;
+  if ( ((filterTopic !== undefined) && (filterTopic !== null)) ||
+    ((filterRepo !== undefined) && (filterRepo !== null)) ) {
+    filtered = false;
+  }
+  /*
+    console.log("filtered: ", filtered, "topic: ", 
+    ((filterTopic !== undefined) && (filterTopic !== null)),
+    "repo: ", ((filterRepo !== undefined) && (filterRepo !== null)));
+    */
+
   for (const t of topics) {
     const pos_x = scale_x(t[0]);
     for (const r of repos_keys_by_rank) {
       const topic_repo = t[1].repos.get(r)
-      // console.log(t[0], r, t[1].repos, "key: ", t[0] + "@" + r);
+      if (filtered === false) {
+        filtered = ((filterTopic === t[0]) || (filterRepo === r));
+      }
+      let filter_opacity = ( ((filtered === undefined) || (filtered === null))
+        ? 1
+        : (filtered ? 1 : 0.2));
+      /*
+        console.log(t[0], r, "filter: ", filtered, filterTopic,
+        filterRepo, "opacity: ", filter_opacity);
+        */
       const pos_y = scale_y(r);
       if (!first_pass_repos_done) {
         labels_y.push(
@@ -114,6 +181,7 @@ export default function TopicRepoHeatMap({
           width={scale_x.bandwidth()}
           height={scale_y.bandwidth()}
           fill={topic_repo ? colorScale(topic_repo.pct) : "#FCFCFC"} 
+          opacity={filter_opacity}
           onMouseEnter={(e) => {
             setHoveredCell({
               xLabel: String(t[0]),
@@ -125,6 +193,7 @@ export default function TopicRepoHeatMap({
           }}
         />
       );
+      if (filtered === true) { filtered = false; }
     }
     const l_x = pos_x;
     const l_y = max_y + 40;
@@ -136,7 +205,7 @@ export default function TopicRepoHeatMap({
         textAnchor = "middle"
         dominantBaseline = "middle"
         fontSize = {10}
-        stroke = "none"
+        stroke = "bold"
         fill = "black"
         transform = {`rotate(-60, ${l_x},${l_y})`}
       >

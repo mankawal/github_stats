@@ -3,14 +3,12 @@ import ReactDOM from "react-dom/client"
 import "./index.css"
 import reportWebVitals from "./reportWebVitals"
 
-import TopicRepoHeatMap from "./TopicRepoHeatMap"
-import TopicRanked from "./TopicRanked"
+import ForksPanel from "./ForksPanel";
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <TopicRanked width={700} height={700}/>
-    <TopicRepoHeatMap width={300} height={700}/>
+    <ForksPanel />
   </React.StrictMode>
 );
 
