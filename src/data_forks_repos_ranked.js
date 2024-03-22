@@ -50,5 +50,3 @@ export const forks_repos_ranked = [
     "metric_rank": 10
   }
 ];
-
-

@@ -10,7 +10,7 @@ export default function DonutChart(
   /* Move to parent */
   const radius = Math.min(width - 2 * margin.x,
                           height - 2 * margin.y);
-  const inner_radius = radius/5;
+  const inner_radius = radius/3;
 
   const pie = useMemo(() => {
     const pie_gen = d3.pie().value((e) => e[metricname]);
@@ -21,7 +21,7 @@ export default function DonutChart(
     // console.log("[shapes] grp: ", grp, "\ni: ", i);
     const slice_info = {
       innerRadius: inner_radius,
-      outerRadius: (((radius - inner_radius)*grp.value)/(1.1*metric_range)),
+      outerRadius: radius, // (((radius)*(metric_range -grp.value))/(1.1*metric_range)),
       startAngle: grp.startAngle,
       endAngle: grp.endAngle,
     }

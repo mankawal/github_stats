@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import * as d3 from "d3";
 
 const MARGIN = { top: 30, right: 30, bottom: 30, left: 30 };
-const BAR_PADDING = 0.3;
+const BAR_PADDING = 0.1;
 
 function BarItem(
   name, value, barHeight, barWidth, x, y, setHoveredKey) {
@@ -14,7 +14,7 @@ function BarItem(
         console.log("bar-hovered: ", name);
       }}
       onMouseLeave = {() => {
-        setHoveredKey(null);
+          setHoveredKey(null);
         console.log("bar-hover cleared");
       }}
     >
