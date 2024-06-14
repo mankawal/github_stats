@@ -108,7 +108,7 @@ with
     order by repo_metric_count desc
   ),
   topic_repo as (
-    select topic, r.name as repo_name, repo_metric_count, lang,
+    select topic, r.full_name as repo_name, repo_metric_count, lang,
     dense_rank() over (
       order by repo_metric_count desc) overall_repo_rank
     from topic_repo_unranked
@@ -266,7 +266,7 @@ with
     where month(stats_updated_at) = ${filter_month} and
       year(stats_updated_at) = ${filter_year}
   )
-select r.name, rs.metric_count, rs.metric_rank
+select r.full_name as name, rs.metric_count, rs.metric_rank
 from (
   select * from repo_stats_ranked
   where metric_rank <= ${max_rank}

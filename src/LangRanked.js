@@ -15,7 +15,7 @@ export default function LangRanked({
   width, height, data, setHoveredLang
 }) {
 
-  console.log("lang data: ", data);
+  // console.log("lang data: ", data);
   if ((data === undefined) || (data === null) || (data.length === 0)) {
     return;
   }
@@ -24,7 +24,7 @@ export default function LangRanked({
   const val_range = max_val - min_val;
   // console.log("metric val, max: ", max_val, ", min_val: ", min_val);
 
-  return Barplot(width, height, "lang", "metric_count", data, setHoveredLang);
+  return Barplot('Languages', width, height, "lang", "metric_count", data, setHoveredLang);
 
   /*
      return DonutChart(width, height, margin, INFLEXION_PADDING,

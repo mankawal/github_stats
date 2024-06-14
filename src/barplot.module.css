@@ -1,0 +1,13 @@
+.barplot {
+  display: inline-block;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.05)
+}
+
+.barplot_svg {
+  overflow-y: hidden;
+}
+
+.barplot_g {
+  overflow-y: hidden;
+}

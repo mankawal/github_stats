@@ -39,13 +39,15 @@ export default function HeatMapHorizontal(
   xkeyfilter, ykeyfilter 
 ) {
 
-  console.log(
-  width, height, hm_width, data,
-  xkeyname, ykeyname,
-  totalmetricname, xmetricname,
-  xRankName, xrankOverallName, yrankname,
-  xToYPctMetricName,
-  ykeyfilter, xkeyfilter);
+  /*
+    console.log(
+    width, height, hm_width, data,
+    xkeyname, ykeyname,
+    totalmetricname, xmetricname,
+    xRankName, xrankOverallName, yrankname,
+    xToYPctMetricName,
+    ykeyfilter, xkeyfilter);
+    */
 
   const [hoveredCell, setHoveredCell] = useState(null);
 
@@ -82,7 +84,6 @@ export default function HeatMapHorizontal(
       min_x_to_y_pct = stat[xToYPctMetricName];
     }
   }
-  console.log("dataMap: ", dataMap);
   let yfilterSet = ((ykeyfilter !== undefined) && (ykeyfilter !== null));
   let xfilterSet = ((xkeyfilter !== undefined) && (xkeyfilter !== null));
   let filterSet = yfilterSet || xfilterSet;
@@ -100,7 +101,7 @@ export default function HeatMapHorizontal(
         (xfilterSet && (t[1].mapXVals.has(xkeyfilter))) );
     } ));
     if (yfilterSet) {
-      console.log("filter-topics: ", ykeyfilter, dataMap.get(ykeyfilter));
+      // console.log("filter-topics: ", ykeyfilter, dataMap.get(ykeyfilter));
       xmap_to_use = dataMap.get(ykeyfilter).mapXVals;
     }
     if (xfilterSet) {
@@ -110,7 +111,7 @@ export default function HeatMapHorizontal(
       );
     }
   }
-  console.log(yfilterSet, xfilterSet, "ymap_to_use: ", ymap_to_use, "\nxmap_to_use: ", xmap_to_use);
+  // console.log(yfilterSet, xfilterSet, "ymap_to_use: ", ymap_to_use, "\nxmap_to_use: ", xmap_to_use);
   const ykeys = Array.from(ymap_to_use, ([k, v]) => k);
   const xkeys_by_rank = [...xmap_to_use].sort((l, r) =>
     ((l[1].rank > r[1].rank) ? 1 : ((l[1].rank < r[1].rank) ? -1: 0))

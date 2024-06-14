@@ -1,14 +1,14 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import "./index.css"
-import reportWebVitals from "./reportWebVitals"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-import ForksPanel from "./ForksPanel";
+import MainPanel from "./MainPanel";
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <ForksPanel />
+    <MainPanel />
   </React.StrictMode>
 );
 

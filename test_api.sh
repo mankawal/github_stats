@@ -35,8 +35,9 @@ function curl_to_file()
   curl_call $* | tee $outfile.json
 }
 
-curl_to_file ./sample.forks.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 20, "max_repo_rank":100}'
+# curl_to_file ./sample.forks.topics_repos  POST topic_repo_stats '{"month": 12, "year": 2023, "sort_by": "forks", "max_topic_rank": 20, "max_repo_rank":100}'
 
+curl_to_file /tmp/t POST topic_repo_stats '{"month": 10, "year": 2023, "sort_by": "forks", "max_topic_rank": 10, "max_repo_rank":50}'
 # # Sort order: forks
 # curl_to_file ./sample.forks.topics_ranked POST topics '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'
 # curl_to_file ./sample.forks.repos_ranked  POST repos '{"month": 12, "year": 2023, "sort_by": "forks", "max_rank": 10}'

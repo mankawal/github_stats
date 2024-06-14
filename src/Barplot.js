@@ -1,14 +1,16 @@
 import { useMemo } from "react";
 import * as d3 from "d3";
+import "./index.css"
 
-const MARGIN = { top: 30, right: 30, bottom: 30, left: 30 };
+const MARGIN = { top: 10, right: 10, bottom: 10, left: 10 };
 const BAR_PADDING = 0.1;
 
 function BarItem(
-  name, value, barHeight, barWidth, x, y, setHoveredKey) {
+  label, name, value, barHeight, barWidth, x, y, setHoveredKey) {
   const fix_y = 4;
   return (
     <g
+      key={`${label}-${name}-${x}-${y}-bar`}
       onMouseEnter = {() => {
         setHoveredKey(name);
         console.log("bar-hovered: ", name);
@@ -100,35 +102,39 @@ function BarItem(
   };
 
 export default function Barplot(
-  width, height,
+  label, width, in_height,
   keyname, metricname, data,
   setHoveredKey) {
   // bounds = area inside the graph axis = calculated by substracting the margins
-  const boundsWidth = width - MARGIN.right - MARGIN.left;
-  const boundsHeight = height - MARGIN.top - MARGIN.bottom;
-
   // Y axis is for groups since the barplot is horizontal
   const groups = data.sort((a, b) => b[metricname] - a[metricname]).map((d) => d[keyname]);
+  const barItemsHeight = groups.length * (20 + BAR_PADDING);
+
+  const boundsWidth = width - MARGIN.right - MARGIN.left;
+  const boundsHeight = barItemsHeight - MARGIN.top - MARGIN.bottom;
+
   const yScale = useMemo(() => {
     return d3
       .scaleBand()
       .domain(groups)
-      .range([0, boundsHeight])
+      .range([0, barItemsHeight])
       .padding(BAR_PADDING);
-  }, [data, height]);
+  }, [data, barItemsHeight]);
 
   // X axis
   // const max = d3.max(data.map((d) => d[metricname]));
   const max = data[0][metricname];
   const min = data[data.length - 1][metricname];
   const xScale = d3.scaleLinear().domain([0, max]).range([0, boundsWidth]);
+  // const xScale = d3.scaleLinear().domain([min, max]).range([0, boundsWidth]);
 
+  // console.log("BarItem keys: ", keyname, metricname, "\n", data.map((d) => `${d[keyname]}-${d[metricname]}-${yScale(d[keyname])}`))
   // Build the shapes
   const allShapes = data.map((d) => 
-    BarItem(
+    BarItem(label,
       d[keyname],
       d[metricname],
-      yScale.bandwidth(),
+      20, // yScale.bandwidth(),
       xScale(d[metricname]),
       xScale(0),
       yScale(d[keyname]),
@@ -136,15 +142,28 @@ export default function Barplot(
     )
   );
 
+  // console.log("Test3", keyname, metricname, "height: ", boundsHeight, "bars height: ", barItemsHeight);
   return (
-    <svg width={width} height={height}>
-      <g
-        width={boundsWidth}
-        height={boundsHeight}
-        transform={`translate(${[MARGIN.left, MARGIN.top].join(",")})`}
-      >
-        {allShapes}
-      </g>
-    </svg>
+    <div>
+      <h1 className="mb-4 flex text-2xl text-blue-800 capitalize justify-center">{label}</h1>
+        <svg width={width} height={barItemsHeight + MARGIN.top + MARGIN.bottom}>
+          <g transform={`translate(${[MARGIN.left, MARGIN.top].join(",")})`}>
+            {allShapes}
+          </g>
+        </svg>
+    </div>
   );
 };
+/*
+import styles from "./barplot.module.css";
+      <div className={styles.barplot} width={width} height={height}>
+        <svg className={styles.barplot_svg} width={width} height={30 + barItemsHeight}>
+          <g className={styles.barplot_g}
+            width={boundsWidth}
+            height={30 + barItemsHeight}
+            transform={`translate(${[MARGIN.left, MARGIN.top].join(",")})`}>
+            {allShapes}
+          </g>
+        </svg>
+      </div>
+*/
